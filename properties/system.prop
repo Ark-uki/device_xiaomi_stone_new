@@ -138,3 +138,8 @@ persist.debug.coresight.config=stm-events
 ro.kernel.qemu.gles=0
 qemu.hw.mainkeys=0
 persist.backup.ntpServer="0.pool.ntp.org"
+
+# Infinity
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2400, 120 Hz
+ro.infinity.camera=48MP + 8MP + 2MP | 13 MP

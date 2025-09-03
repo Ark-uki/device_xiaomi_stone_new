@@ -3,12 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# BCR
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
-# Datura
-PRODUCT_PACKAGES += Datura
-
 # Dolby
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
@@ -203,8 +197,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
@@ -277,7 +269,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-infinity
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Overlay RRO
@@ -429,7 +421,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.default \
-    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default \
+    $(LOCAL_PATH)/rootdir/etc/init.infinity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.infinity.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
