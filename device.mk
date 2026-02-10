@@ -277,9 +277,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayStone \
-    FrameworkOverlayMoonstone \
+    DialerOverlayStone \
     FrameworkOverlayStone \
     FrameworkOverlaySunstone \
+    FrameworkOverlayMoonstone \
     NcmTetheringOverlay \
     NfcOverlayStone \
     SettingsOverlayStone \
