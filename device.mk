@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# BCR
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
 # Datura
 PRODUCT_PACKAGES += Datura
 
@@ -277,7 +274,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-matrixx
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Overlay RRO
