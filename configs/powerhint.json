@@ -88,36 +88,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "GPUIdleTimer",
-      "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
-      "Values": ["10000", "80"],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWHystTriggerCount",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count",
-      "Values": ["0", "3"],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWHistMemory",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory",
-      "Values": ["0", "20"],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWHystLength",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_length",
-      "Values": ["0", "10"],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWSampleMs",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/sample_ms",
-      "Values": ["10", "4"],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/min_freq",
       "Values": ["7980", "5161", "3879", "2929", "762"],
@@ -205,12 +175,6 @@
       "Value": "650000000"
     },
     {
-      "PowerHint": "SUSTAINED_PERFORMANCE",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "266000000"
-    },
-    {
       "PowerHint": "INTERACTION",
       "Type": "EndHint",
       "Value": "DISABLE_TA_BOOST"
@@ -256,24 +220,6 @@
       "Node": "UclampTALatency",
       "Duration": 500,
       "Value": "1"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBWHystTriggerCount",
-      "Duration": 500,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBWHystLength",
-      "Duration": 500,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBWHistMemory",
-      "Duration": 500,
-      "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
@@ -423,12 +369,6 @@
       "Node": "GPUForceRailOn",
       "Duration": 1000,
       "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "GPUMinFreq",
-      "Duration": 1000,
-      "Value": "650000000"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
