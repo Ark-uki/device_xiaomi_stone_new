@@ -25,7 +25,7 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
       "Values": ["9999999", "2054400", "1651200", "1516800", "1401600", "1228800", "691200", "0"],
-      "DefaultIndex": 5,
+      "DefaultIndex": 6,
       "ResetOnInit": true
     },
     {
@@ -71,8 +71,8 @@
     {
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
-      "Values": ["840000000", "650000000", "266000000"],
-      "DefaultIndex": 2,
+      "Values": ["840000000", "650000000", "443000000", "266000000"],
+      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
@@ -321,7 +321,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUMinFreq",
       "Duration": 500,
-      "Value": "650000000"
+      "Value": "443000000"
     },
     {
       "PowerHint": "LAUNCH",
