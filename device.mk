@@ -512,3 +512,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/stone/stone-vendor.mk)
+
+# Disable Kernel VINTF Requirements
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+PRODUCT_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
