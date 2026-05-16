@@ -55,6 +55,13 @@ ro.bluetooth.wipower=false
 # CNE
 persist.vendor.cne.feature=1
 
+# Dalvik & ART
+dalvik.vm.dex2oat64.enabled=true
+pm.dexopt.install=quicken
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot-after-ota=verify
+pm.dexopt.first-boot=quicken
+
 # Data Modules
 persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
@@ -101,7 +108,6 @@ sys.qca1530=detect
 
 # Performance
 arm64.memtag.process.system_server=off
-dalvik.vm.dex2oat64.enabled=true
 dev.pm.dyn_samplingrate=1
 persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
 persist.timed.enable=true
